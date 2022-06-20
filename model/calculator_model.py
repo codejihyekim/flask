@@ -71,6 +71,7 @@ class CalculatorModel:
           result = sess.run(r, {w1: feed_dict['w1'], w2: feed_dict['w2']})
           print(f'TF 곱셈결과: {result}')
           saver.save(sess, os.path.join(self.model,'calculator_mul', 'model'),global_step=1000)
+     
      def create_div_model(self):
           w1 = tf.placeholder(tf.float32, name='w1')
           w2 = tf.placeholder(tf.float32, name='w2')
