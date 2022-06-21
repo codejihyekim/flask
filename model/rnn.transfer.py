@@ -23,7 +23,6 @@ class Solution:
         self.model  = None
         self.sess = tf.Session()
     
-
     def hook(self):
         self.create_model()
         self.train()

@@ -26,3 +26,4 @@ class GradientDescent():
             plt.savefig("static/img/result.svg")
             print('경사하강법 실행 중 ..')
             return "경사하강법 (Gradient Descent)"
+            
